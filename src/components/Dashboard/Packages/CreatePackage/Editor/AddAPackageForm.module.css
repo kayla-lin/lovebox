@@ -1,0 +1,27 @@
+.note-helper {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.char-count {
+  color: var(--dark-gray-color);
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.error {
+  color: #cd5656;
+}
+
+@media screen and (max-width: 400px) {
+  .note-helper {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}

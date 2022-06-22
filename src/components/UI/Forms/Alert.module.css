@@ -1,0 +1,47 @@
+/* Both */
+.error,
+.noti {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  justify-content: center;
+  padding: 7px 20px;
+}
+
+.error p,
+.noti p {
+  padding: 0px;
+  padding-left: 5px;
+}
+
+/* Error */
+.error {
+  color: #cd5656;
+  background-color: #efb1b1;
+  border: 1px solid #cd5656;
+}
+
+.error p {
+  color: #cd5656;
+}
+
+/* Noti */
+.noti {
+  color: #198329;
+  background-color: #cde8cc;
+  border: 1px solid #198329;
+}
+
+.noti p {
+  color: #198329;
+}
+
+@media only screen and (max-width: 550px) {
+  .excla {
+    display: none;
+  }
+  .error p,
+  .noti p {
+    padding: 0px;
+  }
+}

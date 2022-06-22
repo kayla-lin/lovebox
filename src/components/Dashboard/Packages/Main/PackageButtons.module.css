@@ -1,0 +1,100 @@
+/* Top control package buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.button.view-button {
+  margin-left: auto;
+}
+
+.button {
+  font-family: inherit;
+  color: var(--alt-font-color);
+  background-color: var(--dark-pink-color);
+  border: 0;
+  padding: 20px;
+  width: 98%;
+  font-weight: 700;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+
+  height: 140px;
+}
+
+.button:hover {
+  background-color: var(--dark-pink-hover);
+}
+
+button.button {
+  text-transform: lowercase;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.button h2 {
+  font-size: 16px;
+}
+
+.button-go {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.arrow {
+  margin-left: 5px;
+  display: inline;
+  position: relative;
+  top: 2px;
+}
+
+.mail {
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+.icon {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: white;
+}
+@media only screen and (max-width: 500px) {
+  .icon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .buttons {
+    grid-template-columns: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .add-button,
+  .view-button {
+    margin: 0;
+  }
+
+  .add-button {
+    margin-bottom: 5px;
+  }
+
+  .view-button {
+    margin-top: 5px;
+  }
+}

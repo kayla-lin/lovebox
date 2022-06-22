@@ -1,0 +1,84 @@
+/* List */
+.list-item {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 20px;
+}
+
+.list-item {
+  border-bottom: 1px solid var(--light-gray-color);
+}
+
+/* Package info */
+.p-name {
+  color: var(--primary-font-color);
+}
+
+.p-inbox {
+  color: var(--dark-gray-color);
+  font-size: 12px;
+}
+
+/* Bottom tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.daily, .all, .p-count {
+  margin-top: 5px;
+  color: var(--alt-font-color);
+  font-size: 10px;
+  padding: 1px 10px;
+  display: inline;
+  border-radius: 50px;
+}
+
+.daily, .all, .p-count {
+  background-color: var(--primary-font-color);
+}
+
+/* Package button: select & selected */
+.p-select,
+.p-selected {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  gap: 15px;
+}
+
+.p-select button,
+.p-selected button {
+  font-family: inherit;
+  border: 0;
+  font-weight: 600;
+  height: 30px;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.p-select button {
+  background-color: var(--light-gray-color);
+}
+
+.p-selected button {
+  background-color: var(--primary-pink-color);
+}
+
+.p-select button:hover {
+  cursor: pointer;
+  background-color: var(--dark-gray-color);
+}
+
+.ellipse {
+  color: var(--light-gray-color);
+}
+
+.ellipse:hover {
+  color: var(--dark-gray-color);
+  cursor: pointer;
+}

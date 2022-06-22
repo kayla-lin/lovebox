@@ -1,0 +1,23 @@
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input input {
+  border: 1px solid var(--dark-gray-color);
+  font: inherit;
+  padding: 10px;
+  padding-left: 40px;
+}
+
+.input i {
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 13px;
+  color: var(--dark-gray-color);
+}
+
+.input input:focus {
+  outline: 0;
+  border: 1px solid var(--primary-font-color);
+}

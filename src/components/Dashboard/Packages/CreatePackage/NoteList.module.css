@@ -1,0 +1,65 @@
+/* List */
+.delete-list,
+.view-list {
+  list-style-type: none;
+  padding: 0px;
+  hyphens: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  text-transform: none;
+}
+
+/* List item */
+.item {
+  margin-bottom: 15px;
+}
+
+.delete-list li,
+.view-list li {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.view-list li {
+  color: var(--dark-gray-color);
+}
+
+.delete-list li {
+  color: var(--primary-font-color);
+}
+
+.delete-list li,
+.view-list li {
+  background-color: var(--off-white-color);
+  border: 1px solid var(--light-gray-color);
+}
+
+/* Empty text */
+.empty {
+  display: flex;
+  justify-content: center;
+  color: var(--dark-gray-color);
+  min-height: 100px;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+/* Edit bar */
+.edit {
+  color: var(--dark-gray-color);
+  border-top: 1px solid var(--light-gray-color);
+  padding-top: 20px;
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.edit-item:hover {
+  color: var(--light-gray-color);
+  cursor: pointer;
+}

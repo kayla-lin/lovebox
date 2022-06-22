@@ -1,0 +1,20 @@
+.info-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  font-size: 9px;
+}
+
+.info-stat {
+  color: white;
+  background-color: var(--primary-font-color);
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.tag {
+  color: var(--dark-gray-color);
+}

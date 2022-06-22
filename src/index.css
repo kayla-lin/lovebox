@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&family=Source+Sans+Pro&display=swap");
+
+:root {
+  /* Colors */
+  --primary-blue-color: #96c5fd;
+  --primary-blue-dark-color: #6fa3e3;
+  --primary-pink-color: rgb(255, 86, 193);
+  --primary-pink-dark-color: #c02278;
+  --primary-red-color: #cd5656;
+  --primary-green-color: rgb(55, 169, 106);
+  --primary-font-color: rgb(48, 8, 30);
+  --primary-font-light-color: rgb(110, 23, 65);
+  --darker-gray-color: #8d8d8d;
+  --dark-gray-color: #948d8d;
+  --light-gray-color: #cfcfcf;
+  --off-white-color: #fafafa;
+  --off-gray-color: #f7fbfc;
+  --alt-font-color: #fff;
+
+  --dark-pink-color: rgb(210, 20, 162);
+  --dark-pink-hover: rgb(244, 56, 197);
+  --pink-highlight-color: rgb(255, 86, 193);
+  --bright-pink-color: rgb(242, 164, 211);
+
+  /* Sizes */
+  --medium-title: 24px;
+}
+
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--off-gray-color);
+  text-transform: lowercase;
+  min-height: 100vh;
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.wrapper-pos {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+}
+
+/* Scrollbars */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--dark-gray-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-gray-color);
+}
+
+/* App.tsx */
+.page-wrapper {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  padding-bottom: 3rem;
+}
+
+/* Global layouts */
+.gradient-back {
+  background-color: var(--dark-pink-color);
+  min-height: 100vh;
+}
+
+/* Modules */
+.mod-white-1 {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.062);
+}
+
+/* Padding-all */
+.mod-padding-1 {
+  padding: 20px;
+}
+
+.mod-padding-2 {
+  padding: 40px;
+}
+
+/* Padding-top-bottom */
+.mod-padding-tb-1 {
+  padding: 20px 0;
+}
+
+/* Box-shadow */
+.mod-shadow-1 {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mod-shadow-2 {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Margin-top-bottom */
+.mod-margin-tb-1 {
+  margin: 20px 0;
+}
+
+.mod-margin-tb-2 {
+  margin: 40px 0;
+}
+
+/* Margin-bottom */
+.mod-margin-bottom-1 {
+  margin-bottom: 20px;
+}
+
+.mod-margin-bottom-2 {
+  margin-bottom: 40px;
+}
+
+/* Margin-top */
+.mod-margin-top-1 {
+  margin-top: 20px;
+}
+
+.mod-margin-top-2 {
+  margin-top: 40px;
+}
+
+/* Texts */
+/* Small */
+.title-small h2 {
+  font-size: var(--medium-title);
+  color: var(--primary-font-color);
+}
+
+.title-small p {
+  color: var(--dark-gray-color);
+}
+
+.title-small-2 h2 {
+  font-size: 14px;
+  color: var(--primary-font-color);
+  border-bottom: 1px solid var(--light-gray-color);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.title-small-3 h2 {
+  font-size: 14px;
+  color: var(--primary-font-color);
+}
+
+.title-small-3 {
+  border-bottom: 1px solid var(--light-gray-color);
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Medium */
+.title-med-1 h2 {
+  font-size: 20px;
+  color: var(--primary-font-color);
+}
+
+.title-med-1 p {
+  color: var(--dark-gray-color);
+}
+
+/* Large */
+.title-large h1 {
+  font-size: 35px;
+  color: var(--primary-font-color);
+}
+
+.title-large p {
+  color: var(--dark-gray-color);
+}
+
+@media only screen and (max-width: 550px) {
+  .wrapper {
+    margin: 0;
+    padding: 20px;
+  }
+
+  /* Padding-all */
+  .mod-padding-1 {
+    padding: 15px;
+  }
+
+  .mod-padding-2 {
+    padding: 20px;
+  }
+}

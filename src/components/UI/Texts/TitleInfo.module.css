@@ -1,0 +1,51 @@
+.top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.large h1 {
+  font-size: 40px;
+  margin: 0px;
+}
+.med {
+  padding: 0px;
+}
+.med p {
+  padding: 0px;
+  font-weight: 700;
+}
+.large p {
+  font-weight: 700;
+  font-size: 16px;
+  color: #948d8d;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 890px) {
+
+  .button {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .large h1 {
+    font-size: 30px;
+  }
+
+  .large, .med {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .top-info {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+}

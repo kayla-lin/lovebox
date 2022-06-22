@@ -1,0 +1,218 @@
+.landing-banner {
+  background-color: var(--bright-pink-color);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Left side of landing */
+.landing-left {
+  margin-left: auto;
+}
+
+.animated-bear {
+  width: 400px;
+  height: 400px;
+}
+
+/* Right side of landing */
+.landing-right {
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  color: white;
+}
+
+.landing-right h1 {
+  font-size: 60px;
+  line-height: 50px;
+  padding-bottom: 20px;
+}
+
+.landing-right p {
+  font-size: 16px;
+}
+
+.start {
+  padding-top: 20px;
+  display: flex;
+}
+
+/* Tutorial */
+.tut-wrap {
+  background-color: var(--dark-pink-color);
+}
+.tutorial {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+/* Tut left */
+.tut-left {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box-desc {
+  color: white;
+  text-align: right;
+  width: 400px;
+  word-wrap: break-word;
+}
+.box-desc h2 {
+  font-size: 60px;
+}
+.box-desc p {
+  font-size: 16px;
+}
+/* Tut right */
+.tut-right {
+  margin-right: auto;
+}
+
+.bear-img img {
+  height: auto;
+  width: auto;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+@media only screen and (max-width: 970px) {
+  /* Landing left */
+  .animated-bear {
+    height: 300px;
+    width: 300px;
+  }
+  /* Landing right */
+  .landing-right {
+    width: 300px;
+  }
+  .landing-right h1 {
+    font-size: 40px;
+  }
+  .landing-right p {
+    font-size: 14px;
+  }
+  /* Tut right */
+  .box-desc {
+    width: 300px;
+  }
+  .box-desc h2 {
+    font-size: 40px;
+  }
+  .box-desc p {
+    font-size: 12px;
+  }
+  /* Tut left */
+  .bear-img img {
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* Landing left */
+  .animated-bear {
+    height: 250px;
+    width: 250px;
+  }
+  /* Landing right */
+  .landing-right {
+    width: 250px;
+  }
+  .landing-right h1 {
+    font-size: 35px;
+    line-height: 30px;
+    padding-bottom: 10px;
+  }
+  .landing-right p {
+    font-size: 12px;
+  }
+  .start {
+    padding-top: 10px;
+  }
+  /* Tut right */
+  .box-desc {
+    width: 200px;
+  }
+  .box-desc h2 {
+    font-size: 30px;
+  }
+  .box-desc p {
+    font-size: 12px;
+  }
+  /* Tut left */
+  .bear-img img {
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .landing-banner {
+    background-color: var(--bright-pink-color);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    align-items: center;
+    position: relative;
+    padding: 50px;
+  }
+  /* Landing left */
+  .landing-left {
+    margin: 0;
+  }
+  .animated-bear {
+    height: 300px;
+    width: 300px;
+  }
+  /* Landing right */
+  .landing-right {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    background-color: rgba(96, 19, 80, 0.253);
+    box-shadow: 0px 0px 10px rgba(70, 3, 39, 0.062);
+    padding: 15px;
+  }
+  .landing-right h1 {
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 5px;
+  }
+  .landing-right p {
+    font-size: 12px;
+  }
+  .start {
+    padding-top: 10px;
+  }
+  /* Tut */
+  .tutorial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+  .tut-left {
+    margin: 0;
+  }
+  .tut-right {
+    margin: 0;
+    justify-content: center;
+
+  }
+
+  .box-desc {
+    text-align: center;
+  }
+}

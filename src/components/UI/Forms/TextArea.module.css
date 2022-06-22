@@ -1,0 +1,16 @@
+.wrapper textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid var(--dark-gray-color);
+  background-color: #f8f8f8;
+  font-size: 16px;
+  font-family: inherit;
+  resize: none;
+  color: var(--primary-font-color);
+}
+
+.wrapper textarea:focus {
+  outline: 1px solid var(--primary-font-color);
+}

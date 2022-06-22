@@ -1,0 +1,33 @@
+/* List */
+.list {
+  height: 250px;
+  overflow-y: auto;
+  border: 1px solid var(--light-gray-color);
+  background-color: var(--off-white-color);
+}
+
+.list-item {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--light-gray-color);
+  position: relative;
+}
+
+/* Selected box */
+.selected {
+  position: relative;
+}
+
+.pinned {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: var(--light-gray-color)
+}
+
+@media screen and (max-width: 500px) {
+  .list {
+    height: auto;
+  }
+}

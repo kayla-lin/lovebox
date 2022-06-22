@@ -1,0 +1,14 @@
+.logout {
+    margin: 20px 0;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--light-gray-color)
+}
+
+.logout-title {
+    font-size: 14px;
+}
+
+.logout-button {
+    display: flex;
+    margin-top: 10px;
+}

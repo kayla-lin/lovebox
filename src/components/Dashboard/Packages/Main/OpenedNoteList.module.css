@@ -1,0 +1,49 @@
+/* Lists */
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+  min-height: 300px;
+  
+}
+
+.notes-list li {
+  color: var(--dark-gray-color);
+  background-color: var(--off-white-color);
+  border: 1px solid var(--dark-gray-color);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+/* Note bottom */
+.note-bottom {
+  margin-top: 25px;
+  border-top: 1px solid var(--light-gray-color);
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Icons */
+.note-op {
+  display: flex;
+  color: var(--light-gray-color);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.note-op:hover {
+  color: var(--dark-gray-color);
+}
+
+.seen-msg {
+  background-color: var(--primary-font-color);
+  font-weight: 500px;
+  font-size: 10px;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  border-radius: 30px;
+}

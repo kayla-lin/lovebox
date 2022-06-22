@@ -1,0 +1,9 @@
+.left-move {
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 550px) {
+    .left-move {
+        margin-left: 0px;
+    }
+}

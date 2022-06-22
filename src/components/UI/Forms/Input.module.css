@@ -1,0 +1,15 @@
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input input {
+  border: 1px solid var(--dark-gray-color);
+  font: inherit;
+  padding: 10px;
+}
+
+.input input:focus {
+  outline: 0;
+  border: 1px solid var(--primary-font-color);
+}

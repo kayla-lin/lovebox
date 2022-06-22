@@ -1,0 +1,97 @@
+/* Modal */
+.modal-content {
+  background-color: #fefefe;
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -250px;
+  padding: 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 5000;
+  hyphens: auto;
+  border: 1px solid #888;
+}
+
+.close {
+  font-size: 20px;
+  color: var(--dark-gray-color);
+  cursor: pointer;
+}
+
+.close:hover {
+  color: var(--light-gray-color);
+}
+
+/* Top controls */
+.package-control {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Title */
+.package-title {
+  display: flex;
+  align-items: baseline;
+  overflow: none;
+  gap: 10px;
+}
+.package-title h1 {
+  font-size: 40px;
+}
+
+.edit-title {
+  color: var(--light-gray-color);
+}
+
+.edit-title:hover {
+  cursor: pointer;
+  color: var(--dark-gray-color);
+}
+
+/* More information */
+.info-title {
+  color: var(--dark-gray-color);
+}
+
+/* Edit notes list */
+.edit-notes-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-notes-title p {
+  color: var(--dark-gray-color);
+}
+
+/* Modal BG */
+.modal-bg {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 500px) {
+  .modal-content {
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .package-control {
+    justify-content: flex-start;
+  }
+}

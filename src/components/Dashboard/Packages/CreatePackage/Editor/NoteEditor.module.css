@@ -1,0 +1,41 @@
+/* Button + Return */
+.top-control {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Return to package hub */
+.return-hub {
+  display: flex;
+  align-items: center;
+  color: var(--dark-gray-color);
+}
+
+.return-hub:hover {
+  color: var(--light-gray-color);
+}
+
+/* Created Notes */
+.created-notes-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-length {
+  color: var(--dark-gray-color);
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .top-control { 
+    justify-content: center;
+  }
+
+  .created-notes-top { 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

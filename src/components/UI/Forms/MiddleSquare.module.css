@@ -1,0 +1,14 @@
+.wrapper {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    font-weight: 700;
+  }

@@ -1,0 +1,32 @@
+.centered {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -250px;
+  z-index: 20000;
+  overflow-y: auto;
+}
+
+.note {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.from {
+  text-align: right;
+}
+
+.to, .from {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.text {
+  text-transform: none;
+}

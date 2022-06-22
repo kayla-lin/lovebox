@@ -1,0 +1,9 @@
+.title h1 {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--dark-gray-color);
+  padding-bottom: 10px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--light-gray-color);
+}
+

@@ -1,0 +1,29 @@
+.modal {
+  position: absolute;
+  right: 20px;
+  top: 45%;
+  background-color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  padding: 10px 20px;
+  z-index: 5000;
+  color: black;
+}
+
+.modal:hover {
+  text-decoration: underline;
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2500;
+  height: 100%;
+  width: 100vw;
+}

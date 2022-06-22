@@ -1,0 +1,11 @@
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}

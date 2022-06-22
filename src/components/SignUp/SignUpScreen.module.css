@@ -1,0 +1,35 @@
+.title-desc {
+  padding-bottom: 15px;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup h1 {
+  margin: 0px;
+  font-size: 32px;
+}
+
+.signup p {
+  margin: 0px;
+  font-size: 14px;
+  color: #948D8D;
+  padding-bottom: 15px;
+}
+
+.signup a {
+  padding-left: 5px;
+  font-size: 14px;
+  color: #679bda;
+}
+
+.signup a:hover {
+  color: #4076B7;
+}
+
+.signin {
+  display: flex;
+}
+

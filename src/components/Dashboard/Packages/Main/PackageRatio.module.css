@@ -1,0 +1,123 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 250px;
+}
+
+/* Pie graphic */
+.pies {
+  position: relative;
+  align-self: center;
+}
+
+/* Foreground */
+.pie {
+  --p: 80;
+  --b: 12px;
+  --c: var(--dark-pink-color);
+  --w: 125px;
+  
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  margin: 5px;
+  place-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-font-color);
+  z-index: 2;
+}
+.pie:before,
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.pie:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b)
+      var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+}
+.pie:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg))
+    translateY(calc(50% - var(--w) / 2));
+}
+
+/* Background */
+.pie-bg {
+  --p: 100;
+  --b: 12px;
+  --c: var(--bright-pink-color);
+  --w: 125px;
+  width: var(--w);
+  aspect-ratio: 1;
+  position: absolute;
+  top: 0px;
+  margin: 5px;
+  place-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-font-color);
+  z-index: 1;
+}
+.pie-bg:before,
+.pie-bg:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.pie-bg:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b)
+      var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+}
+.pie-bg:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg))
+    translateY(calc(50% - var(--w) / 2));
+}
+
+/* Legend */
+.legend {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--dark-gray-color);
+  gap: 10px;
+
+}
+.key {
+  width: 10px;
+  height: 10px;
+  background-color: var(--dark-pink-color);
+}
