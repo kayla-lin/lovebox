@@ -31,7 +31,7 @@ npm install
 ```
 ## Firebase
 ```
-Go to Firebase and copy and paste your API keys into the src/firebase-config.js
+Go to Firebase and create a new Cloud Firestore project, copy and paste your API keys into the src/firebase-config.js
 ```
 ## Running
 ```
