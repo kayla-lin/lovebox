@@ -6,7 +6,7 @@ See: https://loveboxapp.com
 
 [![Dashboard](https://i.gyazo.com/3a531496672378845526029a0bbb00cf.png)](https://gyazo.com/3a531496672378845526029a0bbb00cf)
 
-Lovebox is a messaging application inspired by the social media trend of sending loveboxes. You are able to group messages together into a "package". The recipient of your package can either open all your messages as once or you can send a message once a day.
+Lovebox is a messaging application inspired by the social media trend of sending love boxes. You are able to group messages together into a "package". The recipient of your package can either open all your messages as once or you can send a message once a day.
 
 ## Technologies
 This is a React Typescript application created with help from:
@@ -26,7 +26,8 @@ This is a React Typescript application created with help from:
 ## Setup
 ```
 git clone git://kayla-lin.github.io/music-gen-front-end.git
-npm install // (once you are inside of the folder)
+(Navigate to the folder through terminial)
+npm install
 ```
 ## Firebase
 ```
