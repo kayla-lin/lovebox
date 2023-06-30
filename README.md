@@ -1,6 +1,6 @@
 # Lovebox v1.0.0
 
-See: https://loveboxapp.com
+See: lovekit.io
 
 [![Present opening](https://i.gyazo.com/124fac59b9305806b13c28ca3ab20263.png)](https://gyazo.com/124fac59b9305806b13c28ca3ab20263)
 
